@@ -3,6 +3,10 @@ export default class User {
     this.name = name;
     this.age = age;
   }
+
+  roll() {
+    console.log(Math.floor(Math.random() * 6) + 1);
+  }
 }
 
 export function printName(user) {
