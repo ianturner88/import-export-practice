@@ -1,4 +1,4 @@
-import Dice from './dice';
+import Dice from './dice.js';
 
 const newRoll = document.querySelector('[data-roll-dice]');
 
