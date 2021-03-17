@@ -1,11 +1,4 @@
-const newRoll = document.querySelector('[data-roll-dice]');
-
-newRoll.addEventListener('click', (e) => {
-  console.log('Hello');
-  dice.rollDice();
-});
-
-class Dice {
+export default class Dice {
   // the dice used to generate the random numbers 1 through 6
 
   constructor() {
@@ -44,21 +37,6 @@ class Dice {
       counter++;
     }
 
-    this.publicNumber1 = Math.floor(Math.random() * 6) + 1;
-    this.redNumber1 = Math.floor(Math.random() * 6) + 1;
-    this.yellowNumber1 = Math.floor(Math.random() * 6) + 1;
-    this.greenNumber1 = Math.floor(Math.random() * 6) + 1;
-    this.blueNumber1 = Math.floor(Math.random() * 6) + 1;
-    this.publicNumber2 = Math.floor(Math.random() * 6) + 1;
-    this.redNumber2 = Math.floor(Math.random() * 6) + 1;
-    this.yellowNumber2 = Math.floor(Math.random() * 6) + 1;
-    this.greenNumber2 = Math.floor(Math.random() * 6) + 1;
-    this.blueNumber2 = Math.floor(Math.random() * 6) + 1;
-
-    dice.printDiceNumbers();
-  }
-
-  printDiceNumbers() {
     console.log(this.publicNumber1);
     console.log(this.redNumber1);
     console.log(this.yellowNumber1);
@@ -72,5 +50,3 @@ class Dice {
     console.log(this.blueNumber2);
   }
 }
-
-const dice = new Dice();

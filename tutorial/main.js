@@ -1,6 +1,10 @@
-import User from '/user.js';
+import Dice from './dice';
 
-const user = new User('Bob', 11);
-console.log(user);
+const newRoll = document.querySelector('[data-roll-dice]');
 
-console.log(user.roll());
+const dice = new Dice();
+
+newRoll.addEventListener('click', (e) => {
+  console.log('Hello');
+  dice.rollDice();
+});
